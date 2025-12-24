@@ -20,7 +20,6 @@ I hope for this document to be extensive and include all the subtopics for the A
 % Notes are either with "\textit{}", "\textbf{}" and just notes.
 
 \section{Waves}
-% 1. derivation of c (from first principles)
 % 2. Young's double slit (in some detail)
 % 3. some practice questions (just to get going) 
 % 4. Diffraction grating
@@ -71,8 +70,30 @@ $$f = \frac{cn}{2L}$$
 But given this cool derivation for $c^2 = \frac{T}{\mu}$:
 https://youtu.be/1Sh7IO1EBcs
 
-The final equation below can be verified:
-$$f = \frac{n}{2L}\sqrt{\frac{T}{\mu}}$$ % something like that; I cannot derive and thus do not know its significance
+Imagine a semi-circular pulse propagating along a string and you focus on the peak of that pulse along a distance of $\Delta s$ as it propagates. 
+
+This distance can be rearranged as, given the diagram: 
+$$\Delta s = 2R\tan{\theta}$$
+
+The resultant force at that instant (through tip-to-tail vector addition) is: 
+$$\sum{F} = 2T\sin{\theta}, \; \text{where $T$ is the tension in the string}$$
+
+Since this force is also centripetal, the resulting equation can be made:
+$$2T\sin{\theta} = \frac{mc^2}{R}$$
+
+$\mu$ is the linear density of a material and equals the mass ($m$) divided by its length ($\Delta s$). Therefore, $m = \mu\Delta s$
+
+Putting everything into one equation:
+$$2T\sin{\theta} = \frac{2\mu R \tan{\theta} c^2}{R}$$
+
+Using the small angle approximations of $\sin{\theta} \approx \theta$ and $\tan{\theta} \approx \theta$ and further rearranging, you get to:
+$$T = \mu c^2$$
+
+Then:
+$$c = \sqrt{\frac{T}{\mu}}$$
+
+Thus the final equation for the frequency for n-th term harmonics is:
+$$f = \frac{n}{2L}\sqrt{\frac{T}{\mu}}$$
 
 \subsection{Refraction, diffraction \& Interference}
 \textbf{Path Difference ($\Delta x$)}: The difference in length that a wave has taken to reach a given point 
@@ -80,7 +101,7 @@ $$f = \frac{n}{2L}\sqrt{\frac{T}{\mu}}$$ % something like that; I cannot derive 
 \textbf{Phase Difference ($\Delta\phi$)}: The difference in phase between two given points (usually at their incidence).
 
 Example: if wave A is at $6.56\lambda$ and wave B is at $12.31\lambda$ then:
-$$\Delta x = 5.75m$$
+$$\Delta x = 5.75\lambda$$
 $$\Delta\phi = (.56 - .31) \times 2\pi = \frac{\pi}{2}$$
 
 This would mean that the waves are $\frac{\pi}{2}$ out of phase. This idea is important for the upcoming experiments.
