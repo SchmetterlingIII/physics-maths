@@ -2,6 +2,7 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage[margin=1.2in]{geometry} % Adjust margins
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{float}
 
 \title{Mocks Revision}
@@ -19,6 +20,13 @@ I hope for this document to be extensive and include all the subtopics for the A
 % Notes are either with "\textit{}", "\textbf{}" and just notes.
 
 \section{Waves}
+% 1. derivation of c (from first principles)
+% 2. Young's double slit (in some detail)
+% 3. some practice questions (just to get going) 
+% 4. Diffraction grating
+% 5. Refraction (at surface) 
+% 6. Optics and context behind asw
+
 \subsection{Progressive Waves}
 Progressive waves are waves that transfer energy without transferring material.
 
@@ -28,28 +36,43 @@ The oscillations of transverse waves are perpendicular to the direction of energ
 The oscillations of longitudinal waves are parallel to the direction of energy transfer. 
 
 \subsubsection{Polarisation}
-** Polarisation is such that the plane of wave oscillation only occurs on one plane.
+Oscillations of transverse waves can occur at any point that is perpendicular to the direction of energy transfer; polarising the wave, thus, would ensure that the displacements are only restricted to one of these lines. 
 
-Only transverse waves can be polarised since they exist along a plane (whereas longitudinal waves could only exist along a given line and thus couldn't be `polarised`).
+Only transverse waves can be polarised.
 
 Examples of polarisation: 
 \begin{itemize}
-    \item \textit{Review}: Polarised glasses have a polarising filter that means that only light that is incident on the given plane that the glasses work for will pass through to the user. \textit{Understand why this can allow people to see through the bottom of lakes}
-    \item \textit{Review}: For old TV antennas, the polarisation of the antennas meant that only certain frequencies of the radio waves could be incident (i.e. the radio waves in the desired frequency appeared louder and clearer (\textit{why?}) and allowed for targeted communications.
+    \item Polarised glasses have a polarising filter that polarises light to only one plane. This means that the glare from the surface of the water is predominately filtered out which means that the bottom of the lake can be seen with such glasses. 
+
+    \item For old TV antennas, the polarisation of the antennas meant that only certain frequencies of the radio waves could be received and meant that there was a decreased likelihood of interference between signals - even if they were of the same frequency, allowing for targeted communications.
 \end{itemize}
 
 \subsection{Stationary Waves}
-Stationary waves are waves that do not transfer energy (\textit{...so then what are they? I can only describe their negation but that isn't really anything})
+Stationary waves are waves that oscillate with respect to time but that do not transfer energy; their peak amplitude profiles (\textit{i.e. where the positions along the waves where peaks and troughs occur}) are fixed.
 
 They are formed by two progressive waves moving in opposite directions interfering both constructively and destructively with the same frequency ($f$), wavelength ($\lambda$) and constant phase difference($\phi$). 
 
 Nodes are points of total destructive interference (on stationary waves) and are points of zero displacement. Anti-nodes are points of constructive interference and are at maximum displacement (or amplitudes of the stationary wave). Anti-nodes oscillate between these points of maximum displacement.
 
 \subsubsection{Harmonics}
-% Something i don't really understand *and* don't really understand the point of
-The first harmonic is half a wavelength. It is the shortest length stationary wave between the enclosures of two nodes
+% what is the point of harmonics (i.e. what is their importance)
+Imagine a string of length L with fixed ends (nodes) at each side. The harmonics are such that integers of half a wavelength form this sequence (the harmonic sequence). The first one, where $L = \frac{\lambda}{2}$, is called the fundamental frequency, $f_0$.
 
-$$T = \frac{1}{2\pi}\sqrt{\frac{f}{\mu}}$$ % something like that; I cannot derive and thus do not know its significance
+The general formula for this is: 
+$$L = \frac{n\lambda}{2}, \; n \in \mathbb{N}$$
+
+When working in questions however, you may be asked to find out the frequency of a given harmonic (e.g. 5th) but can only work through it implicitly. Below is my attempt for a useful derivation of this:
+
+It is known that $c = f\lambda$ and $L = \frac{n\lambda}{2}$. 
+
+Therefore:
+$$f = \frac{cn}{2L}$$
+
+But given this cool derivation for $c^2 = \frac{T}{\mu}$:
+https://youtu.be/1Sh7IO1EBcs
+
+The final equation below can be verified:
+$$f = \frac{n}{2L}\sqrt{\frac{T}{\mu}}$$ % something like that; I cannot derive and thus do not know its significance
 
 \subsection{Refraction, diffraction \& Interference}
 \textbf{Path Difference ($\Delta x$)}: The difference in length that a wave has taken to reach a given point 
@@ -62,7 +85,7 @@ $$\Delta\phi = (.56 - .31) \times 2\pi = \frac{\pi}{2}$$
 
 This would mean that the waves are $\frac{\pi}{2}$ out of phase. This idea is important for the upcoming experiments.
 
-\textbf{Coherence}: A wave is coherent when it has the same wavelength, frequency and constant phase relationships. To ensure that the waves are coherent for these upcoming experiments, monochromatic (mostly laser) light was used so that clear interference patterns could be observed. 
+\textbf{Coherence}: When two or more waves have the same wavelength, frequency and constant phase relationships. To ensure that the waves are coherent for these upcoming experiments, monochromatic (mostly laser) light was used so that clear interference patterns could be observed. 
 
 \subsubsection{Young's Double Slit Experiment}
 % I will need to also include diagrams from this (probably best if drawn myself on Onenote)
@@ -72,6 +95,16 @@ A monochromatic light source would be incident to two different slits a distance
 
 $D >> s$ because ... 
 
+$w$ is the fringe separation and for the most effective diffraction (\textbf{what does that mean, is that even true?}), 
+$$w \approx \lambda$$.
+
 \textbf{Note}: If the light was not monochromatic (e.g. a light bulb) then a filter would be made: first by shining the light through a single slit (\textbf{which achieves what effect??}) and polarising the resultant light to ensure that it is monochromatic (\textbf{again, is this right?}).
+
+\subsubsection{Diffraction}
+\begin{itemize}
+    \item Diffraction grating
+    \item Uses of it and alternations of the experiment
+    \item equation
+\end{itemize}
 
 \end{document}
