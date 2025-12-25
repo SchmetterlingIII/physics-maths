@@ -19,22 +19,21 @@ I hope for this document to be extensive and include all the subtopics for the A
 
 % Notes are either with "\textit{}", "\textbf{}" and just notes.
 
-\section{Waves}
-% 2. Young's double slit (in some detail)
+
 % 3. some practice questions (just to get going) 
 % 4. Diffraction grating
 % 5. Refraction (at surface) 
 % 6. Optics and context behind asw
 
-\subsection{Progressive Waves}
+\section{Progressive Waves}
 Progressive waves are waves that transfer energy without transferring material.
 
-\subsubsection{Longitudinal \& Transverse Waves}
+\subsection{Longitudinal \& Transverse Waves}
 The oscillations of transverse waves are perpendicular to the direction of energy transfer. 
 
 The oscillations of longitudinal waves are parallel to the direction of energy transfer. 
 
-\subsubsection{Polarisation}
+\subsection{Polarisation}
 Oscillations of transverse waves can occur at any point that is perpendicular to the direction of energy transfer; polarising the wave, thus, would ensure that the displacements are only restricted to one of these lines. 
 
 Only transverse waves can be polarised.
@@ -46,14 +45,14 @@ Examples of polarisation:
     \item For old TV antennas, the polarisation of the antennas meant that only certain frequencies of the radio waves could be received and meant that there was a decreased likelihood of interference between signals - even if they were of the same frequency, allowing for targeted communications.
 \end{itemize}
 
-\subsection{Stationary Waves}
+\section{Stationary Waves}
 Stationary waves are waves that oscillate with respect to time but that do not transfer energy; their peak amplitude profiles (\textit{i.e. where the positions along the waves where peaks and troughs occur}) are fixed.
 
 They are formed by two progressive waves moving in opposite directions interfering both constructively and destructively with the same frequency ($f$), wavelength ($\lambda$) and constant phase difference($\phi$). 
 
 Nodes are points of total destructive interference (on stationary waves) and are points of zero displacement. Anti-nodes are points of constructive interference and are at maximum displacement (or amplitudes of the stationary wave). Anti-nodes oscillate between these points of maximum displacement.
 
-\subsubsection{Harmonics}
+\subsection{Harmonics}
 % what is the point of harmonics (i.e. what is their importance)
 Imagine a string of length L with fixed ends (nodes) at each side. The harmonics are such that integers of half a wavelength form this sequence (the harmonic sequence). The first one, where $L = \frac{\lambda}{2}$, is called the fundamental frequency, $f_0$.
 
@@ -95,7 +94,7 @@ $$c = \sqrt{\frac{T}{\mu}}$$
 Thus the final equation for the frequency for n-th term harmonics is:
 $$f = \frac{n}{2L}\sqrt{\frac{T}{\mu}}$$
 
-\subsection{Refraction, diffraction \& Interference}
+\section{Refraction, diffraction \& Interference}
 \textbf{Path Difference ($\Delta x$)}: The difference in length that a wave has taken to reach a given point 
 
 \textbf{Phase Difference ($\Delta\phi$)}: The difference in phase between two given points (usually at their incidence).
@@ -108,7 +107,7 @@ This would mean that the waves are $\frac{\pi}{2}$ out of phase. This idea is im
 
 \textbf{Coherence}: When two or more waves have the same wavelength, frequency and constant phase relationships. To ensure that the waves are coherent for these upcoming experiments, monochromatic (mostly laser) light was used so that clear interference patterns could be observed. 
 
-\subsubsection{Young's Double Slit Experiment}
+\subsection{Young's Double Slit Experiment}
 % I will need to also include diagrams from this (probably best if drawn myself on Onenote)
 Thomas Young disproved the corpuscle (\textit{i.e. light was a particle}) theory of light with this experiment.
 
@@ -146,14 +145,14 @@ $$w= \frac{w \lambda}{D}$$
 
 Questions are typically asked on using this experiment and transposing this knowledge with sound for example. 
 
-\subsubsection{Diffraction}
+\subsection{Diffraction}
 \textbf{Definition}: Diffraction is the spreading out of waves. 
 
 When there is a single slit, the diffraction pattern has the highest intensity in the middle and decreases further away from the $n=0$ order, as shown below:
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.65\linewidth]{image-01.png}
-    \caption{}
+    \caption{Single Slit Diffraction Pattern}
     \label{fig:placeholder}
 \end{figure}
 
@@ -161,7 +160,7 @@ The reason for diffraction when there is a single slit (and no diffraction grati
 \begin{figure}
     \centering
     \includegraphics[width=0.95\linewidth]{image-02.png}
-    \caption{}
+    \caption{Image of the intereference pattern as a result of a single slit.}
     \label{fig:placeholder}
 \end{figure}
 
@@ -176,10 +175,34 @@ One issue with this experiment is that the fringe spacings are blurry (\textit{i
 \textbf{Diffraction Gratings} contain a much larger amounts of minor slits (gratings) between the major slit that are closely spaced apart in order to increase the resolution of the resulting interference pattern. % why??
 
 % derive the equation dsin\theta = n\lambda
+The relationship between the order of the maxima, the angle this is away from the slit, the number of slits and the slit separation is:
+$$d\sin{\theta} = n \lambda$$
 
 % uses and examples: x-ray crystallography, spectrospocy and line spectra
+\textbf{Uses of diffraction gratings}:
+\begin{itemize}
+    \item \textbf{X-ray crystallography}: 
+\end{itemize}
 
 
-\subsubsection{Refraction at plane surface}
+\subsection{Refraction at plane surface}
 \textit{I am quite confident with refraction (given the CompPhys) and, thus, will focus on total internal reflection and the nature of optics cable (and cladding and considerations there).}
+
+Total Internal Reflection occurs in a material where the incident angle is greater than the critical angle of the material. This causes the incident light (rather than refract through the material) to reflect of the normal of the material.
+
+% Have a better appreciation for what the refractive index means and why this is the case (and kind of the theory behind this). 
+
+This quality of materials is useful for fibre optics where signals transmitted through electromagnetic (EM) waves needs to propagate without losing data (through leakage, compression or loss of accurate encoding). Therefore, the material of fibre optics needs to be optimised to reduce these effects. 
+
+% the type of optical fibre i need to know is a step-index optical fibre
+% what are its componenents (cladding, core) and why are they optimal (and what shoudl be changed of each (relative refractive indices, sizes) to get the best out of them))
+
+The extent of these effects are:
+\begin{itemize}
+    \item \textbf{Material Dispersion}: where different wavelengths of light within a material reflect at different angles since there is a slightly different associated refractive index when incident on the surface of the material. To reduce this, \textbf{using monochromatic light} will mean that this dispersion will not occur since they will always have a constant phase relationship. Further, making the diameter of the core smaller will help also.
+    \item \textbf{Pulse Broadening}:
+    \item \textbf{Absorption}:
+\end{itemize}
+
+
 \end{document}
