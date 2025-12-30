@@ -7,7 +7,7 @@
 
 \title{Waves}
 \author{Reuben Okotie}
-\date{December 2025}
+\date{}
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.35em}
@@ -17,13 +17,12 @@
 \maketitle
 I hope for this document to be extensive and include all the subtopics for the A-Level Physics spec. I will vet over this to have accurate notes throughout the course as a whole and hope to use this for the actual A-Level (I might also do this for select maths topics that are quite conceptually difficult like \textit{Vectors}, \textit{Differential Equations} \& \textit{Mechanics}.
 
-% Notes are either with "\textit{}", "\textbf{}" and just notes.
+For revision, attempt these Isaac Physics questions: 
+\begin{itemize}
+    \item https://isaacscience.org/questions/don't\_bragg\_sym
+    \item Understand more about x-ray crystallography here: https://chem.libretexts.org/Bookshelves/Analytical\_Chemistry/Supplemental\_Modules\_(Analytical\_Chemistry)/Instrumentation\_and\_Analysis/Diffraction\_Scattering\_Techniques/X-ray\_Crystallography
+\end{itemize}
 
-
-% 3. some practice questions (just to get going) 
-% 4. Diffraction grating
-% 5. Refraction (at surface) 
-% 6. Optics and context behind asw
 
 \section{Progressive Waves}
 Progressive waves are waves that transfer energy without transferring material.
@@ -95,6 +94,8 @@ Thus the final equation for the frequency for n-th term harmonics is:
 $$f = \frac{n}{2L}\sqrt{\frac{T}{\mu}}$$
 
 \section{Refraction, diffraction \& Interference}
+The \textbf{refractive index} is the factor by which the speed of light has been reduced when passing through a material. 
+
 \textbf{Path Difference ($\Delta x$)}: The difference in length that a wave has taken to reach a given point 
 
 \textbf{Phase Difference ($\Delta\phi$)}: The difference in phase between two given points (usually at their incidence).
@@ -184,9 +185,10 @@ $$d\sin{\theta} = n \lambda$$
     \item \textbf{X-ray crystallography}: 
 \end{itemize}
 
-
 \subsection{Refraction at plane surface}
 \textit{I am quite confident with refraction (given the CompPhys) and, thus, will focus on total internal reflection and the nature of optics cable (and cladding and considerations there).}
+
+\textbf{Why does the speed of light slow down in a material of higher refractive indices -- what does that actually mean?}
 
 Total Internal Reflection occurs in a material where the incident angle is greater than the critical angle of the material. This causes the incident light (rather than refract through the material) to reflect of the normal of the material.
 
@@ -199,10 +201,15 @@ This quality of materials is useful for fibre optics where signals transmitted t
 
 The extent of these effects are:
 \begin{itemize}
-    \item \textbf{Material Dispersion}: where different wavelengths of light within a material reflect at different angles since there is a slightly different associated refractive index when incident on the surface of the material. To reduce this, \textbf{using monochromatic light} will mean that this dispersion will not occur since they will always have a constant phase relationship. Further, making the diameter of the core smaller will help also.
-    \item \textbf{Pulse Broadening}:
-    \item \textbf{Absorption}:
+    \item \textbf{Material Dispersion}: where different wavelengths of light within a material reflect at different angles since there is a slightly different associated refractive index when incident on the surface of the material. \textit{To reduce this, \textbf{using monochromatic light} a constant phase relationship of the waves as well as having them refract in the same way (since they have the same wavelength (and thus the same incident angle, rather than small deviances ($\delta\theta$) which causes the dispersion).}
+    
+    \item \textbf{Modal Dispersion}: Modal dispersion is the dispersion of light due to the material itself: \textit{making the diameter of the core smaller will mean that small differences in wavelength will not accumulate along the path of the fibre optic (as well as making the wire straight.}
+    
+    \item \textbf{Pulse Broadening}: Is the general broadening of a wave, caused by modal and material dispersion. This can cause the destructive inference of signals passing along fibre optics and thus the output signal will have a lower amplitude and longer (and inconsistent) wavelength. 
+    
+    \item \textbf{Absorption}: When the fibre surrounding a material absorbs its signal (parts of its energy) and thus causing a reduced amplitude emergent signal. 
+
+% I feel there needs to be an appreciation for the differences in refractive indices for the core and cladding of a fibre optic cable. 
+    
 \end{itemize}
-
-
 \end{document}
